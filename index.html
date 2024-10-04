@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Photozone - Photo Studio Website Template</title>
+    <link href="images/logo.png" rel="icon">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600, 700,900|Oswald:400,700" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+  
+<!-- photo css -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+  
+    <link rel="stylesheet" href="css/style22.css">
+
+<!--photo css ends -->
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+/* Add margins to the entire section */
+#section-photos {
+  margin-left: 20px; /* Adjust left margin for the section */
+  margin-right: 20px; /* Adjust right margin for the section */
+  padding: 10px 0; /* Optional: Add some padding on top and bottom */
+}
+
+/* Reduce margin between the photo items */
+.photo-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Keep width at 100% for responsiveness */
+  height: 250px; /* Uniform height */
+  margin: 10px 0; /* Reduced margin between items */
+}
+
+/* Image styling */
+.photo-item img {
+  object-fit: cover; /* Ensures images cover the div proportionally */
+  width: 100%; /* Make sure images take up the full width */
+  height: 100%; /* Make sure images take up the full height */
+  border-radius: 5px; /* Optional: adds a small border radius */
+}
+
+/* Adjust the photo-text-more icon to center in the image */
+.photo-text-more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the icon when hovering over the photo */
+.photo-item:hover .photo-text-more {
+  opacity: 1;
+}
+
+#one{
+  font-family: "Gowun Batang", serif;
+  font-weight: 700;
+  font-style: normal; 
+}
+
+
+#two{
+    font-family: "Euphoria Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width: 1100px) {
+    .photo-item img {
+      height: 350px !important;
+    }
+    .photo-item {
+      height: 350px !important;
+      margin: 10px 0; 
+}
+ }
+
+
+
+
+</style>
+
+</head>
+
+<body style="overflow-x: hidden;" >
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <img src="img/logo.PNG" style="height: 30px;" alt="">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a id="one" href="#home" class="nav-item nav-link">Home</a>
+                <a id="one" href="#photo" class="nav-item nav-link">Photos</a>
+                <a id="one" href="#aboutme" class="nav-item nav-link">About</a>
+                
+            </div>
+            <a href="index.html" class="navbar-brand  py-2 px-4 mx-3 d-none d-lg-block">
+                <img src="img/logo.PNG" style="height: 30px;" alt="">
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                
+                <a id="one" href="#services" class="nav-item nav-link">Services</a>
+                <a id="one" href="" class="nav-item nav-link">Plans</a>
+                <a id="one" href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div id="home"  style="background-color: white;" class="container-fluid hero-header  py-5 mb-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <p class="text-primary text-uppercase mb-2 animated slideInDown">Welcome To fidal photography</p>
+                    <h1 id="two" class="display-4 mb-3 animated slideInDown">I'm Fidal, a Passionate Wedding Photographer</h1>
+                    <p class="animated slideInDown">Capturing The Authentic Moments of Your Special Day. From Joyful Smiles To Intimate Glances, My Goal is To Create Beautiful Images That Reflect The Emotions And Memories You'll Cherish Forever.</p>
+                    <div class="d-flex align-items-center pt-4 animated slideInDown">
+                        
+                    </div><a href="https://wa.me/918075267595" class="btn1 btn btn-primary btn-md smoothscroll"">Contact Me <i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="col-lg-6 animated fadeIn">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid bg-white p-3 w-100 mb-3" src="img/main1.jpg" alt="">
+                            <img class="img-fluid bg-white p-3 w-50" src="img/main2.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid bg-white p-3 w-50 mb-3" src="img/Main3.jpg" alt="">
+                            <img class="img-fluid bg-white p-3 w-100" src="img/main4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+
+
+
+    <!-- photosection -->
+<div id="photo" class="container-fluid site-section" style="margin-bottom: 0; padding-bottom: 0;">
+
+
+    <div class="row mb-3">
+      <div class="col-12 text-center">
+        <h2 id="two" class="heading">Photos</h2>
+      </div>
+    </div>
+
+    <section class="row align-items-stretch photos" id="section-photos">
+      <div class="col-12">
+        <div class="row align-items-stretch">
+
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+            <a href="img/image1.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image1.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <a href="img/image2.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image2.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="img/image3.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image3.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+            <a href="img/image4.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image4.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <a href="img/image5.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image5.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="img/image6.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image6.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+            <a href="img/image7.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image7.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <a href="img/image8.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image8.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="img/image9.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image9.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+            <a href="img/image10.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image10.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <a href="img/image11.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image11.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="img/image12.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image12.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+            <a href="img/image13.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image13.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <a href="img/image14.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image14.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="img/image15.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image15.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+            <a href="img/image16.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image16.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <a href="img/image17.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image17.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="img/image18.jpg" class="d-block photo-item" data-fancybox="gallery">
+              <img src="img/image18.jpg" alt="Image" class="img-fluid mb-0">
+              <div class="photo-text-more">
+                <span class="icon icon-eye"></span>
+              </div>
+            </a>
+          </div>
+
+
+
+
+
+        </div>
+
+      </div>
+    </section> <!-- #section-photos -->
+
+<!-- #section-photos -->
+
+    <!-- about me -->
+    <div class="container-xxl px-0 py-5 " id="aboutme" style="background-color: white; border-radius: 20px; margin-top: 50px; box-shadow: 2px 2px 20px rgba(116, 115, 115, 0.181); ">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+        <h2 id="two" class="heading">About Me</h2>
+      </div>
+      <div class="row g-0 d-flex justify-content-center">
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+              <div class="row g-0 flex-sm-row">
+                  <div class="col-sm-6">
+                      <div class="team-img position-relative">
+                          <img class="img-fluid" src="img/team-1 copy.jpg" alt="">
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="h-100 p-5 d-flex flex-column justify-content-between">
+                          <div class="mb-3">
+                              <h4>FIDAL</h4>
+                              <span>Photographer</span>
+                          </div>
+                          <p>
+                            I'm a photographer from Kerala, capturing special moments with creativity and emotion. I focus on turning experiences into lasting memories through heartfelt, beautiful images.</p>
+                          <div class="d-flex">
+                              <a class="btn btn-square btn-outline-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                              <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://wa.me/918075267595"><i class="fab fa-whatsapp"></i></a>
+                              <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://www.instagram.com/fidal_caztro_/"><i class="fab fa-instagram"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+  <!-- about me -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5"  id="services"  >
+        <div class="container">
+          <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h2 id="two" class="heading">Our Services</h2>
+        </div>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-3 img-twice position-relative h-100">
+                        <div class="col-6">
+                            <img class="img-fluid bg-light p-3" src="img/about-1.jpg" alt="">
+                        </div>
+                        <div class="col-6 align-self-end">
+                            <img class="img-fluid bg-light p-3" src="img/about-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <!-- <p class="text-primary text-uppercase mb-2">About Us</p> -->
+                        <h1 class="display-6 mb-4">Wedding Photography</h1>
+                        <p>
+                          As a wedding photographer from Kerala, I’m passionate about capturing the magic and emotion of your day. I focus on candid moments to tell your unique story through creative shots that reflect love and joy. From intimate smiles to grand celebrations, I aim to provide timeless memories and heartfelt images you can cherish forever.</p>            
+                        <a class="btn btn-primary py-3 px-5" href="https://wa.me/918075267595?text=Hi%20Fidal%2C%20I%20would%20like%20to%20know%20about%20your%20Model%20photography%20packages">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+      
+            <div style="height: 100px;"></div>
+
+            <div class="row g-5">
+              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="row g-3 img-twice position-relative h-100">
+                      <div class="col-6">
+                          <img class="img-fluid bg-light p-3" src="img/about-3.jpg" alt="">
+                      </div>
+                      <div class="col-6 align-self-end">
+                          <img class="img-fluid bg-light p-3" src="img/about-4.jpg" alt="">
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="h-100">
+                      <!-- <p class="text-primary text-uppercase mb-2">About Us</p> -->
+                      <h1 class="display-6 mb-4">Model Photography</h1>
+                      <p>Dedicated to showcasing your unique style through striking visuals. Specializing in fashion and editorial photography, I create captivating images that highlight your best features. My approach combines creativity and professionalism, ensuring each shoot reflects your vision. I strive to deliver exceptional photography that beautifully tells your story.</p>            
+                      <a class="btn btn-primary py-3 px-5" href="https://wa.me/918075267595?text=Hi%20Fidal%2C%20I%20would%20like%20to%20know%20about%20your%20wedding%20photography%20packages">Contact Me</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">Why Choose Us!</p>
+                <h1 class="display-6 mb-5">The Leading Photo Studio In The Country</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6 pt-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="fact-item bg-light text-center h-100 p-5">
+                        <h1 class="display-2 text-primary mb-3" data-toggle="counter-up">35</h1>
+                        <h4 class="mb-3">Award Winning</h4>
+                        <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="fact-item bg-light text-center h-100 p-5">
+                        <h1 class="display-2 text-primary mb-3" data-toggle="counter-up">45</h1>
+                        <h4 class="mb-3">Years Experience</h4>
+                        <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-lg-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="fact-item bg-light text-center h-100 p-5">
+                        <h1 class="display-2 text-primary mb-3" data-toggle="counter-up">12345</h1>
+                        <h4 class="mb-3">Happy Clients</h4>
+                        <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Facts End -->
+
+
+    <!-- Project Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">Our Works</p>
+                <h1 class="display-6 mb-0">Discover Our Unique And Creative Photoshoot</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-5.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-5.jpg" data-lightbox="project">
+                                    Memory
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-1.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-1.jpg" data-lightbox="project">
+                                    Wedding
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-2.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-2.jpg" data-lightbox="project">
+                                    Portrait
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-6.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-6.jpg" data-lightbox="project">
+                                    Travel
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-7.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-7.jpg" data-lightbox="project">
+                                    Wedding
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-3.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-3.jpg" data-lightbox="project">    
+                                    Memory
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-4.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-4.jpg" data-lightbox="project">
+                                    Fashion
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-8.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-8.jpg" data-lightbox="project">
+                                    Portrait
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Project End -->
+
+
+
+    <!-- Footer Start -->
+    <div id="contact"  class="container-fluid position-relative bg-dark text-white-50 mt-5 py-5 px-5 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+
+            <div class="col-lg-12 pe-lg-5">
+                <a href="index.html" class="navbar-brand">
+                    <p class="display-5 text-primary" style="font-size: larger; font-weight: lighter;">Contact</p>
+                </a>
+                <p><img src="img/logowhite.png" height="40px" alt=""></p>
+                
+                <p><i class="fa fa-map-marker-alt me-2"></i>Calicut|Kochi</p>
+                <p><i class="fa fa-phone-alt me-2"></i>+91 80752 67595</p>
+                <p><i class="fab fa-whatsapp"></i>&nbsp; +91 80752 67595</p>
+                <p><i class="fab fa-instagram"></i>&nbsp; _fidalphotography_</p>
+                <div class="d-flex justify-content-start mt-4">
+                    
+                    <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://wa.me/918075267595"><i class="fab fa-whatsapp"></i></a>
+                    <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://www.instagram.com/_fidalphotography_/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+    </div>
+    <!-- Footer End -->
+
+
+    <div class="row justify-content-center" style="padding-top: 50px; margin-bottom: 0;padding-bottom: 0;" ></div>
+      <div class="col-md-12 text-center" style="margin-bottom: 0; padding-bottom: 0;">
+        <a href="https://wa.me/917034366060?text=Hi%20Nextdot%20Solutions" style="color:rgb(122, 122, 122) ;">Powered by Nextdot Solutions</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+   
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/lozad.min.js"></script>
+    
+  
+    <script src="js/jquery.fancybox.min.js"></script>
+  
+    <script src="js/main2.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
